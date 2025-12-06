@@ -1,0 +1,90 @@
+@font-face {
+    src: url(fontes/Nexa-ExtraLight.ttf);
+    format: ("truetype");
+    font-family: "Nexa";
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image: linear-gradient(to right, #800400, #E60600);
+    margin: 0;
+    padding: 0;
+}
+
+/* Caixa principal */
+.principal {
+    height: auto;
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 80px auto 0 auto;
+    font-family: "Nexa";
+    background-color: #f8605b8c;
+    box-shadow: 2px 2px 2px 4px #800400;
+    padding: 20px;
+}
+
+.botao01 {
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    background-color: #f8605b8c;
+    border: none;
+    margin: 10px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     transition: all 0.5s ease;
+     text-decoration: none;
+     box-shadow: 1px 1px 1px 2px #940c077c;
+}
+
+.botao01 img {
+    width: 30px;   /* ajuste o tamanho como quiser */
+    height: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Imagens */
+.emogi01, .emogi02 {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.emogi01 img, .emogi02 img {
+    width: 70%;
+    max-width: 300px;
+}
+
+/* Responsividade */
+@media(max-width: 600px) {
+
+    .principal {
+        margin-top: 40px;
+        padding: 15px;
+    }
+
+    .principal h1 {
+        font-size: 20px;
+    }
+
+    .botao01 {
+        height: 45px;
+        width: 45px;
+    }
+
+    .emogi01 img, .emogi02 img {
+        width: 70%;
+    }
+}
